@@ -1,0 +1,152 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User should be logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-10-17T01:26:45.767Z",
+        "line": 17,
+        "name": "As a logged in user, I want to logout from the Parabank website, so that my",
+        "description": "account inofrmation is safe",
+        "id": "parabank-logout-testing;as-a-logged-in-user--i-want-to-logout-from-the-parabank-website--so-that-my;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open the browser",
+            "match": {
+              "location": "com.stepdef.StepDef.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "pass the Parabank URL \"https://parabank.parasoft.com/parabank/index.htm?ConnType\u003dJDBC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://parabank.parasoft.com/parabank/index.htm?ConnType\u003dJDBC\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.stepdef.StepDef.pass_the_parabank_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter the username \"rezwan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rezwan\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_the_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the password \"Boston2023\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boston2023\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on Login button",
+            "match": {
+              "location": "com.stepdef.StepDef.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on Logout button",
+            "match": {
+              "location": "com.stepdef.StepDef.clickLogout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Validate logout is successful",
+            "match": {
+              "location": "com.stepdef.StepDef.validate_logout_is_successful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Quit all browser",
+            "match": {
+              "location": "com.stepdef.StepDef.tearDown()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Parabank logout testing",
+    "description": "Description: User should have a login account",
+    "id": "parabank-logout-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/PBLogout.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
